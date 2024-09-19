@@ -1,0 +1,1 @@
+function tresArgumentos(frase, palavra) {}
