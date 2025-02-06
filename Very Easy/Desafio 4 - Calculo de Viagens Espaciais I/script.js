@@ -1,8 +1,10 @@
 function receiveNumbers(numbers) {
-  const any = numbers.map((number) => number * number);
-  const result = any.join('');
+  const any = String(numbers).split('');
+  const reverted = any.map((value) => {
+    return Number(value * value);
+  });
 
-  return result;
+  return reverted.join('');
 }
 
 console.log(receiveNumbers(3514));
